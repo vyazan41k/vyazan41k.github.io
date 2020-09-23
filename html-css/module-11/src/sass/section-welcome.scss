@@ -1,0 +1,144 @@
+.welcome {
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .welcome {
+    background-image: url('../images/banner@2x.jpg');
+    background-repeat: no-repeat;
+    }
+}
+
+.gradient {
+    background: linear-gradient(to bottom, $color6, $color7);
+    opacity: 0.9;
+    padding-bottom: 230px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 170px;
+    padding-top: 30px;
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav {
+    margin: 0;
+}
+
+.logo__link {
+    font-size: 30px;
+    font-family: $fonts1;
+    color: $color5;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.nav {
+    display: flex;
+}
+
+.menu {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__menu-link {
+    font-size: 14px;
+    font-family: $fonts1;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: $color5;
+    position: relative;
+
+    &:hover {
+        color: $color7;
+    }
+
+    &:hover::after {
+        display: block;
+    }
+}
+
+.menu__menu-link::after {
+    content: " ";
+    display: block;
+    height: 2px;
+    background-color: $color7;
+    width: 100%;
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+}
+
+.cart {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.welcome-title {
+    width: 820px;
+    margin: 0 auto;
+}
+
+.welcome-title__title-up {
+    font-size: 72px;
+    font-family: $fonts3;
+    color: $color5;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 70px 0;
+}
+
+.welcome-titl__title-sub {
+    font-size: 150px;
+    font-family: $fonts1;
+    font-weight: bold;
+    color: $color5;
+    text-transform: uppercase;
+    line-height: 0.933;
+    text-align: center;
+    margin: 0 0 125px 0;
+}
+
+.btn-learn-more {
+    display: block;
+    border: 3px solid $color5;
+    color: $color5;
+    background: none;
+    font-size: 14px;
+    font-family: $fonts1;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    width: 164px;
+    height: 44px;
+    margin: 0 auto;
+}

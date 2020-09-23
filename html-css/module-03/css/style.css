@@ -1,0 +1,112 @@
+body, p, button, h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #626262;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list {
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-top: 75px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+a {
+    color: #626262;
+}
+
+a:hover {
+    color: #03a9f4;
+}
+
+.nav-list + .nav-item {
+    padding: 15px;
+}
+
+.cards {
+    letter-spacing: -0.34em;
+    margin: 0 -30px;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0 30px;
+    letter-spacing: 0;
+    font-size: 14px;
+    margin-bottom: 130px;
+}
+
+.card:nth-last-child(-n+2) {
+    margin-bottom: 55px;
+}
+
+.card-body .category {
+    font: 300 14px 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #b4ad9e;
+    margin-top: 26px;
+    margin-bottom: 30px;
+   }
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.card-img {
+    width: 420px;
+    margin-bottom: 30px;
+}
+
+.btn-more {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 20px 35px;
+    margin-bottom: 75px;
+}

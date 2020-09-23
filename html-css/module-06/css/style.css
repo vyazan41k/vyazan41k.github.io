@@ -1,0 +1,370 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px; 
+}
+
+#header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 115px;
+}
+
+/* Логотип */
+
+.logo a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #95e1d3;
+}
+
+
+/* Меню сайта */
+
+nav {
+    width: 490px;  
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    font-family: 'Montserrat', sans-serif;
+    color: #95e1d3;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.nav-item:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    display: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.nav-item:hover {
+    color: rgb(243, 129, 129);
+}
+
+.nav-item:hover::after {
+    display: block;
+}
+
+/* Секция Amazing service */
+
+.service {
+    width: 100%;
+    height: 430px;
+    margin-bottom: 40px;
+}
+
+/* Заголовки */
+
+.up-title {
+    display: block;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(51, 51, 51);
+    text-transform: none;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+}
+
+.title-sectoin:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    margin: 40px auto 65px;
+}
+
+/* Карточки сервиса */
+
+.service-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 240px;
+}
+
+/* КарточкАААААА сервиса */
+
+.card {
+    box-sizing: border-box;
+    position: relative;
+    width: 380px;
+    height: 120px;
+}
+
+.text-card {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.text-card h4 {
+    margin-left: 62px;
+}
+
+.text-card p {
+    margin-left: 62px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999999;
+    text-transform: none;
+}
+
+.icon1 {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.icon1::before {
+    content: url(../img/img1.png);
+}
+
+.icon2 {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.icon2::before {
+    content: url(../img/img2.png);
+}
+
+.icon3 {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.icon3::before {
+    content: url(../img/img3.png);
+}
+
+.icon4 {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.icon4::before {
+    content: url(../img/img4.png);
+}
+
+.icon5 {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.icon5::before {
+    content: url(../img/img5.png);
+}
+
+.icon6 {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.icon6::before {
+    content: url(../img/img6.png);
+}
+
+/* Секция Meet our team (заголовки выше из секции Amazing service) */
+
+/* Текст над карточками команды */
+
+.text-team {
+    display: block;
+    margin: 0 auto 95px;
+    color: #999999;
+    width: 950px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Карточки команды */
+
+.card-team {
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 155px;
+}
+
+/* КарточкАААААА команды */
+
+.card-item {
+    width: 380px;
+    background-color: #95e1d3;
+}
+
+.card-item:hover .overlay {
+    display: block;
+}
+
+.card-item:hover .icon-share {
+    display: block;
+}
+
+.card-img {
+    position: relative;
+    margin-bottom: 30px;
+    transition: 200ms linear;
+}
+
+.card-img:hover {
+    transform: translate(-10px, -10px);
+    transition-duration: 200ms;
+}
+
+.overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 470px;
+    background: linear-gradient(to bottom, rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
+}
+
+/* Иконки ховера карточки команды */
+
+.icon-share {
+    position: absolute;
+    display: none;
+    width: 233px;
+    height: 56px;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    transform: translate(30%, -50%);
+}
+
+.icon-item {
+    width: 55px;
+    background-color: rgba(252, 227, 138, 1);
+}
+
+.icon-item:hover {
+    background-color: rgba(149, 225, 211, 1);
+}
+
+/* Подпись карточки команды */
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.prof {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    color: #999;
+    line-height: 1.6;
+}
+
+/* Footer */
+
+.container {
+    width: 100%;
+    border-top: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Текст футера */
+
+.foot-text {   
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 60px;
+    float: left;
+}
+
+.foot-text a {
+    color: #f38181;
+}
+
+/* Форма подписки */
+
+.form {
+    position: relative;
+    display: inline;
+    line-height: 60px;
+} 
+
+/* Инпут EMAIL */
+
+input {
+    border: 1px solid #e7e7e7;
+    height: 40px;
+    width: 380px;
+    padding: 0 10px;
+}
+
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #e7e7e7;
+    padding: 0 10px;
+}
+
+/* Кнопка формы */
+
+.btn {
+    position: absolute;
+    right: 1px;
+    top: 18%;
+    box-sizing: border-box;
+    background-color: #95e1d3;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 11px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+}

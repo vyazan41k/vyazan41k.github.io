@@ -1,0 +1,286 @@
+html {
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a,
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+
+
+
+
+.promo {
+    background-color: rgb(26, 25, 21);
+    background-image: url(../img/Vector_Smart_Object.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo-link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+}
+
+.l-in,
+.s-up {
+    padding: 5px 17px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 45px;
+}
+
+.l-in:hover,
+.s-up:hover {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+h3 {
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.btn-find-partner {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff4e50;
+    padding: 14px 23px;
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+
+/* ----------------------------------    */
+
+h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: Montserrat;
+}
+
+.img1 {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.img1::after {
+    content: " ";
+    width: 40px;
+    height: 40px;
+    background-color: #ff4e50;
+    background-image: url(../img/Shape_128.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+
+.img1 img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img2 {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.img2::after {
+    content: " ";
+    width: 40px;
+    height: 40px;
+    background-color: #1cd7ad;
+    background-image: url(../img/Shape_153.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+
+.img2 img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img3 {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.img3::after {
+    content: " ";
+    width: 40px;
+    height: 40px;
+    background-color: #ffa507;
+    background-image: url(../img/Shape_155.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+
+.img3 img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img4 {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.img4::after {
+    content: " ";
+    width: 40px;
+    height: 40px;
+    background-color: #4e73db;
+    background-image: url(../img/Shape_170.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+
+.img4 img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.name {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+.about {
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Roboto;
+}
+
+.btn-see-other {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #ff4e50;
+    background-color: #ffffff;
+    border-radius: 30px;
+    color: #ff4e50;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Montserrat;
+    margin-bottom: 70px;
+}

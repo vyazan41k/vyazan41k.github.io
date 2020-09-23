@@ -1,0 +1,93 @@
+.title {
+    color: $color2;
+}
+
+.title__up-title {
+    font-size: 24px;
+    font-family: $fonts3;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title__sub-title {
+    font-size: 30px;
+    font-family: $fonts1;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.title__sub-title::after {
+    content: " ";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: $color3;
+    margin: 40px auto 70px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 33%;
+}
+
+.service-card__icon1::after,
+.service-card__icon2::after,
+.service-card__icon3::after,
+.service-card__icon4::after,
+.service-card__icon5::after,
+.service-card__icon6::after {
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin: 0 30px 30px 30px;
+}
+
+.service-card__icon1::after {
+    content: url(../images/icon/ALARM.png);
+}
+
+.service-card__icon2::after {
+    content: url(../images/icon/LINEGRAPH.png);
+}
+
+.service-card__icon3::after {
+    content: url(../images/icon/COMPUTER.png);
+}
+
+.service-card__icon4::after {
+    content: url(../images/icon/BOOK.png);
+}
+
+.service-card__icon5::after {
+    content: url(../images/icon/HOME.png);
+}
+
+.service-card__icon6::after {
+    content: url(../images/icon/IMAGE.png);
+}
+
+.service-card__name {
+    font-size: 14px;
+    font-family: $fonts1;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: $color2;
+    margin-bottom: 20px;
+}
+
+.service-card__body {
+    font-size: 15px;
+    font-family: $fonts2;
+    line-height: 1.6;
+    color: $color8;
+    margin-bottom: 100px;
+}

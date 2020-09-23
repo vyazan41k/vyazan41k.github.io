@@ -1,0 +1,338 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a,
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+form,
+fieldset {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* ------------ Шрифты ------------ */
+
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* arimo-italic - latin */
+  @font-face {
+    font-family: 'Arimo';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Arimo Italic'), local('Arimo-Italic'),
+         url('../fonts/arimo-v13-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/arimo-v13-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+
+/* ------------ Body ------------ */
+
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/* ------------ Шапка ------------ */
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+
+/* Логотип */
+
+
+.logo {
+    margin-top: 44px;
+}
+
+
+/* Меню */
+
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin-top: 44px;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 2.9;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.nav-item:hover {
+    color: #fed136;
+}
+
+
+
+
+/* ------------ Секция Service ------------ */
+
+
+/* Заголовок */
+
+
+h2 {
+    font-size: 40px;
+    color: #222;
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+}
+
+span {
+    display: block;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #777;
+    text-transform: none;
+    font-family: 'Arimo';
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+/* Контент секции */
+
+
+.card-service {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 122px;
+}
+
+
+/* Карточка секции */
+
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.card-icon {
+    position: relative;
+    width: 74px;
+    height: 74px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+}
+
+.img {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 3;
+    color: #222;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #777;
+    text-align: center;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+
+/* ------------ Секция Contact Us ------------ */
+
+
+.contact_us {
+    height: 680px;
+    width: 100%;
+}
+
+.background {
+    background-color: #222;
+    background-image: url(..//img/Map.png);
+    background-repeat: no-repeat;
+    background-position: right 120px;
+    height: 680px;
+    width: 100vw;
+    margin-left: calc(-50vw + 49%);
+}
+
+
+/* Заголовки в секции Service */
+
+
+.contact_us h2 {
+    color: #fff;
+    margin-bottom: 80px;
+    padding-top: 110px;
+}
+
+
+/* Форма отправки */
+
+
+.form {
+    width: 940px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"]{
+    box-sizing: border-box;
+    margin: 0 30px 26px 0;
+    width: 440px;
+    height: 53px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="submit"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #bbb;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+}
+
+input:invalid,
+textarea:invalid {
+    outline-color: red;
+    outline-width: 2px;
+}
+
+input:valid,
+textarea:valid {
+    outline-color: green;
+    outline-width: 2px;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 440px;
+    height: 210px;
+    padding: 20px 0 0 20px;
+    border-radius: 5px;
+    color: #bbb;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    resize: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    margin-bottom: 40px;
+}
+
+.col-input {
+    display: block;
+    width: 455px;
+    height: 210px;
+}
+
+
+/* Кнопка в форме отправки */
+
+
+.btn-form {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #fed136;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    padding: 25px 50px;
+    font-size: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
