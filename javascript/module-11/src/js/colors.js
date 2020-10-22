@@ -7,7 +7,7 @@ const colors = [
   '#795548',
 ];
 const refs = {
-  body: document.querySelector('body'),
+  body: document.body,
   start: document.querySelector('button[data-action="start"]'),
   stop: document.querySelector('button[data-action="stop"]'),
 };
@@ -21,19 +21,19 @@ function start() {
     changeColor(matchColor());
   }, 1000);
 
-  refs.start.setAttribute('disabled', 'disabled');
+  refs.start.disabled = true
 }
 
 function stop() {
   clearInterval(timerId);
-  refs.start.removeAttribute('disabled');
+  refs.start.disabled = false
 }
 
-function matchColor() {
-  const randomIntegerFromInterval = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  };
+const randomIntegerFromInterval = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
 
+function matchColor() {
   return colors[randomIntegerFromInterval(0, colors.length - 1)];
 }
 
