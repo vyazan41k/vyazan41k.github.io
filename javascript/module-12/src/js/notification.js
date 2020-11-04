@@ -7,7 +7,7 @@ export default {
   click() {
     error({
       text: 'Введите больше одной буквы',
-      delay: 1000,
+      delay: 2000,
     });
   },
 };
